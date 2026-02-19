@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Club 1976</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Raleway:wght@300;400;600;700&family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Oswald:wght@400;600&family=Lora:wght@400;600&family=Poppins:wght@300;500;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">KARATE CLUB</span>
+                    <span class="logo-year">1976</span>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#team" class="nav-link">Our Team</a></li>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero-section">
+        <div class="tiger-background">
+            <div class="tiger-image"></div>
+            <div class="tiger-overlay"></div>
+            <div class="tiger-stripes"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <i class="fas fa-yin-yang"></i>
+            </div>
+            <h1 class="hero-title">KARATE CLUB</h1>
+            <div class="hero-tagline">Strength, Discipline, Tradition – Since 1976</div>
+            <div class="hero-text">
+                <p>Sensei Johan van Tonder started karate in 1976, became South African champion and a black belt at 15, and began teaching while still a teenager. Over the next decades he built his own KWF Shotokan dojo in Potchefstroom and took over coaching the NWU Potchefstroom karate team. Under his leadership, the dojo and NWU team have produced many champions and won around 20 consecutive University Sports South Africa (USSA) titles, making it one of the country's most successful traditional karate centres.</p>
+            </div>
+            <a href="#team" class="cta-button">Meet Our Team</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Shihan & Team</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <!-- Shihans -->
+            <h3 style="font-family: 'Oswald', sans-serif; text-align: center; font-size: 2rem; margin-bottom: 30px; color: var(--primary-gold);">Our Shihans</h3>
+            <div class="shihans-grid">
+                <div class="instructor-card">
+                    <div class="instructor-photo-uniform" data-member="shihan-1">
+                        <img src="images/johan.jpg" alt="Shihan Johan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <button class="upload-photo-btn" data-target="shihan-1">
+                            <i class="fas fa-camera"></i> Upload Photo
+                        </button>
+                    </div>
+                    <div class="instructor-info-uniform">
+                        <h4 class="instructor-name-uniform">Shihan Johan</h4>
+                        <div class="instructor-rank-uniform">7th Dan Black Belt</div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-photo-uniform" data-member="shihan-2">
+                        <img src="images/madelein.jpg" alt="Shihan Madelein" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <button class="upload-photo-btn" data-target="shihan-2">
+                            <i class="fas fa-camera"></i> Upload Photo
+                        </button>
+                    </div>
+                    <div class="instructor-info-uniform">
+                        <h4 class="instructor-name-uniform">Shihan Madelein</h4>
+                        <div class="instructor-rank-uniform">6th Dan Black Belt</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members -->
+            <h3 style="font-family: 'Oswald', sans-serif; text-align: center; font-size: 2rem; margin: 50px 0 30px; color: var(--charcoal);">Our Team</h3>
+            <div class="team-grid-uniform">
+                <!-- Team Member 1 -->
+                <div class="team-member-card-uniform" data-member="team-1">
+                    <div class="team-photo-uniform">
+                        <img src="images/Hardus.jpg" alt="Hardus Visser" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-1">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Hardus Visser</h5>
+                    <div class="team-member-rank-uniform">4e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-2">
+                    <div class="team-photo-uniform">
+                        <img src="images/Riaan.jpg" alt="Riaan J v Vuuren" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-2">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Riaan J v Vuuren</h5>
+                    <div class="team-member-rank-uniform">4e dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-3">
+                    <div class="team-photo-uniform">
+                        <img src="images/Esmari.jpg" alt="Esmari Grobbelaar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-3">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Esmari Grobbelaar</h5>
+                    <div class="team-member-rank-uniform">3e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-4">
+                    <div class="team-photo-uniform">
+                        <img src="images/Ian.jpg" alt="Ian Joynt" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-4">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Ian Joynt</h5>
+                    <div class="team-member-rank-uniform">3e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-5">
+                    <div class="team-photo-uniform">
+                        <img src="images/Johan.jpg" alt="Johan Jordaan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-5">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Johan Jordaan</h5>
+                    <div class="team-member-rank-uniform">2e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-6">
+                    <div class="team-photo-uniform">
+                        <img src="images/Deon.jpg" alt="Deon Lotter" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-6">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Deon Lotter</h5>
+                    <div class="team-member-rank-uniform">2e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-7">
+                    <div class="team-photo-uniform">
+                        <img src="images/Willem.jpg" alt="Willem Niemann" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-7">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Willem Niemann</h5>
+                    <div class="team-member-rank-uniform">2e Dan</div>
+                </div>
+
+                <div class="team-member-card-uniform" data-member="team-8">
+                    <div class="team-photo-uniform">
+                        <img src="images/Dennis.jpg" alt="Dennis Pretorius" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder-team">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="upload-photo-btn-team" data-target="team-8">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h5 class="team-member-name-uniform">Dennis Pretorius</h5>
+                    <div class="team-member-rank-uniform">1e Dan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section locations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Where to Find Us</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="location-name">Potchefstroom Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Potchefstroom<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="location-name">Lichtenburg Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Lichtenburg<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="location-name">Klerksdorp Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Klerksdorp<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="location-name">Rustenburg Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rustenburg<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="location-name">Ventersdorp Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ventersdorp<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="location-name">Fochville Dojo</h3>
+                    <div class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Fochville<br>North West Province</p>
+                        <div class="location-hours">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Moments Through Time</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Admin Controls -->
+            <div class="admin-section-fixed">
+                <h3 class="admin-title">
+                    <i class="fas fa-user-shield"></i> Gallery Admin Panel
+                </h3>
+                <p class="admin-description">
+                    Enter the admin password to unlock gallery management
+                </p>
+                <button class="admin-btn-large" id="admin-toggle">
+                    <i class="fas fa-lock"></i> CLICK HERE TO ENABLE ADMIN MODE
+                </button>
+                <div class="admin-status-box" id="admin-status">
+                    🔒 Admin mode is currently disabled
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid-fixed" id="gallery-grid-fixed">
+                <!-- Gallery slots 1-8 -->
+                <div class="gallery-box" data-index="0">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/foto1.jpg" alt="Gallery 1" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 1</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="0" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="1">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/Tier.jpg" alt="Gallery 2" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 2</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="1" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="2">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/kinders.jpg" alt="Gallery 3" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 3</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="2" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="3">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/team.jpg" alt="Gallery 4" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 4</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="3" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="4">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/team2.jpg" alt="Gallery 5" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 5</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="4" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="5">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/karate.jpg" alt="Gallery 6" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 6</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="5" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="6">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/foto2.jpg" alt="Gallery 7" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 7</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="6" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-box" data-index="7">
+                    <div class="gallery-box-content">
+                        <img src="images/gallery/foto3.jpg" alt="Gallery 8" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="gallery-placeholder-box">
+                            <i class="fas fa-image"></i>
+                            <p>Image 8</p>
+                        </div>
+                        <button class="upload-gallery-btn" data-slot="7" style="display: none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" id="lightbox-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="lightbox-prev" id="lightbox-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightbox-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="lightbox-content">
+                    <img src="" alt="Gallery image" id="lightbox-img">
+                    <div class="lightbox-caption" id="lightbox-caption"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-yin-yang"></i>
+                    <span>KARATE CLUB 1976</span>
+                </div>
+                <div class="footer-tagline">Discipline • Strength • Honor</div>
+                <div class="footer-contact">
+                    <a href="tel:+27123456789" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 12 345 6789</span>
+                    </a>
+                    <a href="tel:+27987654321" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 98 765 4321</span>
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/groups/1526187874298292" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="current-year">2026</span> Johan Van Tonder Karate Dojo. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
